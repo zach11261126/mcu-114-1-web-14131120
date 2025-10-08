@@ -11,13 +11,26 @@ h3 {
   color: rgba(0, 0, 0, 0.8);
 }
 
-srction.body {
-  width: 90px;
+section.body {
+  width: 90%;
   margin: 0px auto;
 }
 
 nav {
   margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+ul > li {
+  display: inline-block;
+  border: 1px solid#ccc;
+  padding: 8px;
+  width: 80px;
+  text-align: center;
 }
 
 .card {
