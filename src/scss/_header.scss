@@ -1,0 +1,23 @@
+header {
+  border-bottom: solid 1px #e5e7eb;
+
+  div.container {
+    max-width: 90vw;
+    height: 4rem;
+    margin: 0px auto;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    display: flex;
+    align-items: center;
+
+    h3 {
+      margin: 0px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.75rem;
+      color: #137fec;
+    }
+  }
+}
