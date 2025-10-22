@@ -25,7 +25,29 @@ header {
 
       > div {
         display: flex;
-        gap: 0.5rem;
+        align-items: center;
+
+        &.left {
+          gap: 2rem;
+        }
+
+        &.right {
+          gap: 0.5rem;
+        }
+      }
+
+      nav {
+        display: flex;
+        gap: 1.5rem;
+
+        a {
+          color: #4b5563;
+          text-decoration: inherit;
+
+          &:hover {
+            color: #137fec;
+          }
+        }
       }
     }
   }
