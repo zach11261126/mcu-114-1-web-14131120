@@ -8,16 +8,25 @@ header {
 
     padding-left: 2rem;
     padding-right: 2rem;
+    > div {
+      height: 4rem;
 
-    display: flex;
-    align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    h3 {
-      margin: 0px;
-      font-size: 1.25rem;
-      font-weight: 700;
-      line-height: 1.75rem;
-      color: #137fec;
+      h3 {
+        margin: 0px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        color: #137fec;
+      }
+
+      > div {
+        display: flex;
+        gap: 0.5rem;
+      }
     }
   }
 }
