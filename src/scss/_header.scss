@@ -1,89 +1,73 @@
 header {
   border-bottom: solid 1px var(--border-color);
 
-  div.container {
-    max-width: 90vw;
-    height: 4rem;
-    margin: 0px auto;
+  h3 {
+    margin: 0px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    color: var(--primary-color);
+  }
 
-    padding-left: 2rem;
-    padding-right: 2rem;
-    > div {
-      height: 4rem;
+  nav {
+    display: flex;
+    gap: 1.5rem;
 
+    a {
+      color: var(--text-color);
+      text-decoration: inherit;
+
+      &:hover {
+        color: #137fec;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    &.left {
+      gap: 2rem;
+    }
+
+    &.right {
+      gap: 0.5rem;
+    }
+
+    &.search {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      gap: 0;
 
-      h3 {
-        margin: 0px;
-        font-size: 1.25rem;
-        font-weight: 700;
-        line-height: 1.75rem;
-        color: var(--primary-color);
-      }
+      input {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        width: 200px;
+        padding: 1rem 0.5rem 1rem 1rem;
+        border: none;
+        background-color: #f3f4f6;
 
-      > div {
-        display: flex;
-        align-items: center;
-
-        &.left {
-          gap: 2rem;
-        }
-
-        &.right {
-          gap: 0.5rem;
-        }
-      }
-
-      nav {
-        display: flex;
-        gap: 1.5rem;
-
-        a {
-          color: var(--text-color);
-          text-decoration: inherit;
-
-          &:hover {
-            color: #137fec;
-          }
-        }
-      }
-
-      div.search {
-        display: flex;
-        gap: 0;
-
-        input {
-          border-top-left-radius: 1rem;
-          border-bottom-left-radius: 1rem;
-          width: 200px;
-          padding: 1rem 0.5rem 1rem 1rem;
-          border: none;
-          background-color: #f3f4f6;
-
-          &:focus {
-            outline: none;
-          }
-        }
-
-        button {
-          border-top-right-radius: 1rem;
-          border-bottom-right-radius: 1rem;
-          padding: 0.5rem;
-          border: none;
-          background-color: var(--gray-color-100);
-          cursor: pointer;
+        &:focus {
+          outline: none;
         }
       }
 
       button {
-        background-color: transparent;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
         padding: 0.5rem;
         border: none;
+        background-color: var(--gray-color-100);
         cursor: pointer;
-        color: var(--text-color);
       }
+    }
+
+    button {
+      background-color: transparent;
+      padding: 0.5rem;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
     }
   }
 }
