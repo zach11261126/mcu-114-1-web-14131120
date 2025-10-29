@@ -4,15 +4,6 @@ footer {
   div {
     display: flex;
     gap: 1.5rem;
-
-    > a {
-      color: var(--text-color);
-      text-decoration: inherit;
-
-      &:hover {
-        color: var(--primary-color);
-      }
-    }
   }
 
   p {

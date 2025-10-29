@@ -5,7 +5,7 @@ section {
 
   div {
     &.container {
-      max-width: 90vw;
+      min-width: 90rw;
       margin: 0px auto;
 
       padding-left: 2rem;
@@ -20,8 +20,18 @@ section {
         align-items: center;
       }
     }
+
     &.main {
       flex-grow: 1;
     }
+  }
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: inherit;
+
+  &:hover {
+    color: var(--primary-color);
   }
 }
