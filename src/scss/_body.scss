@@ -1,0 +1,82 @@
+div.main {
+  div.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    > div {
+      gap: 2rem;
+      height: auto;
+      align-items: start;
+    }
+  }
+
+  aside {
+    width: 20%;
+    flex-shrink: 0;
+
+    h3 {
+      margin: 0;
+      font-weight: 500;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      color: var();
+    }
+
+    nav {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      a {
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.5rem;
+        text-decoration: inherit;
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+        color: var(--text-color);
+
+        &.active {
+          background-color: var(--primary-color);
+          color: white;
+        }
+      }
+    }
+  }
+
+  main {
+    flex: 1 1 0%;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      color: var(--header-color);
+    }
+
+    div.tag {
+      margin-bottom: 2rem;
+      display: flex;
+      font-weight: wrap;
+      gap: 0.5rem;
+
+      button {
+        padding: 0.5rem 1rem;
+        border-width: 0px;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: var(--text-color);
+        background-color: rgb(from var(--border-color) r g b / 0.5);
+        border-radius: 1.5rem;
+        cursor: pointer;
+
+        &.selected {
+          background-color: var(--primary-color);
+          color: white;
+        }
+      }
+    }
+  }
+}
