@@ -1,3 +1,5 @@
+@use "./common";
+
 div.main {
   div.container {
     padding-top: 2rem;
@@ -20,10 +22,8 @@ div.main {
 
     h3 {
       margin: 0;
-      font-weight: 500;
-      font-size: 1.125rem;
-      line-height: 1.75rem;
-      color: var();
+      @include common.fontStyle(1.125rem, 500, 1.75rem);
+      color: var(--header-color);
     }
 
     nav {
@@ -53,9 +53,7 @@ div.main {
     h1 {
       margin: 0;
       margin-bottom: 1.5rem;
-      font-weight: 600;
-      font-size: 1.875rem;
-      line-height: 2.25rem;
+      @include common.fontStyle(1.875rem, 600, 2.25rem);
       color: var(--header-color);
     }
 
@@ -68,9 +66,7 @@ div.main {
       button {
         padding: 0.5rem 1rem;
         border-width: 0px;
-        font-weight: 500;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
+        @include common.fontStyle(0.875rem, 500, 1.25rem);
         color: var(--text-color);
         background-color: rgb(from var(--border-color) r g b / 0.5);
         border-radius: 1.5rem;
@@ -101,24 +97,18 @@ div.main {
         h4 {
           margin: 0;
           margin-top: 0.5rem;
-          font-weight: 600;
-          font-size: 1rem;
-          line-height: 1.5rem;
+          @include common.fontStyle(1rem, 600, 1.5rem);
           color: var(--header-color);
         }
 
         Span {
           &:first-of-type {
-            font-weight: 500;
-            font-size: 0.875rem;
-            line-height: 1.25rem;
+            @include common.fontStyle(0.875rem, 500, 1.25rem);
             color: var(--gray-color-500);
           }
 
           &:last-of-type {
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.5rem;
+            @include common.fontStyle(1rem, 700, 1.5rem);
             color: var(--primary-color);
           }
         }
