@@ -31,7 +31,7 @@ header {
     }
 
     &.search {
-      display: flex;
+      display: VAR(--search-bar-dispaly);
       align-items: stretch;
       gap: 0;
 
