@@ -2,7 +2,7 @@ footer {
   border-top: 1px solid var(--border-color);
 
   div {
-    display: flex;
+    display: var(--nav-display);
     gap: 1.5rem;
   }
 
