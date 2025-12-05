@@ -99,6 +99,11 @@ div.main {
           margin-top: 0.5rem;
           @include common.fontStyle(1rem, 600, 1.5rem);
           color: var(--header-color);
+
+          &:hover {
+            color: var(--primary-color);
+            cursor: pointer;
+          }
         }
 
         Span {
