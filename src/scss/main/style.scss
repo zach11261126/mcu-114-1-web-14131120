@@ -1,8 +1,8 @@
-@use "./variable";
+@use "../variable";
 @use "./main";
 @use "./header";
 @use "./body";
-@use "./color";
+@use "../color";
 @use "./footer";
 
 html,
