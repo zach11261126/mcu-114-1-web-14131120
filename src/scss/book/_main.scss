@@ -3,7 +3,7 @@ section {
 
   div {
     &.container {
-      min-width: 90vw;
+      max-width: 90vw;
       margin: 0px auto;
 
       padding-left: var(--container-padding-left);
@@ -15,6 +15,25 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+    }
+  }
+
+  main.wrapper {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding-left: var(--container-padding-left);
+    padding-right: var(--container-padding-left);
+
+    > div {
+      outline: solid 1px red;
+
+      &.home {
+        height: 100vh;
+      }
+
+      &.page {
+        min-height: 700px;
       }
     }
   }
