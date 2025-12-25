@@ -1,0 +1,83 @@
+@use "../common.scss";
+
+div.home {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: 50%;
+
+    &.text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      > span {
+        align-self: flex-start;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        padding: 3px 6px;
+        @include common.fontStyle(0.75rem, 400, 1rem);
+        border-radius: 5px;
+      }
+
+      h3 {
+        margin: 0;
+        @include common.fontStyle(2rem, 700, 3rem);
+        color: var(--header-color);
+      }
+
+      strong {
+        @include common.fontStyle(1.25rem, 400, 1.75rem);
+        margin-bottom: 30px;
+        color: var(--gray-color-500);
+      }
+
+      div {
+        &.button {
+          display: flex;
+          gap: 1.25rem;
+
+          button {
+            @include common.fontStyle(1rem, 500, 1.25rem);
+            padding: 0.75rem 1.25rem;
+            background-color: var(--gray-color-100);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: var(--second-color);
+              color: var(--white-color);
+            }
+
+            > i {
+              margin-left: 10px;
+            }
+          }
+        }
+
+        &.icons {
+          margin-top: 1rem;
+          display: flex;
+          gap: 1.75rem;
+
+          .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &.image {
+    outline: solid 1px blue;
+  }
+}
