@@ -23,7 +23,7 @@ div.home {
 
       h3 {
         margin: 0;
-        @include common.fontStyle(2rem, 700, 3rem);
+        @include common.fontStyle(var(--home-heading-font-size), 700, 3rem);
         color: var(--header-color);
       }
 
@@ -71,7 +71,7 @@ div.home {
       align-items: center;
 
       img {
-        width: 300px;
+        width: var(--home-image-width);
       }
     }
   }

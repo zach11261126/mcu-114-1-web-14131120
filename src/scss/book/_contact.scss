@@ -3,12 +3,13 @@ div {
   &.content {
     display: flex;
     justify-content: center;
+    margin-bottom: var(--contact-margin-bottom);
   }
 
   &.form {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: 55px 250px auto;
+    grid-template-columns: var(--contact-form-grid-column);
+    grid-template-rows: var(--contact-form-grid-rows);
     gap: 10px;
   }
 

@@ -3,19 +3,21 @@
 div {
   &.content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: var(--about-flex-direction);
+    justify-content: var(--about-flex-justify-content);
+    align-items: var(--about-align-items);
     gap: 50px;
   }
 
   &.introduce {
-    width: 50%;
+    width: var(--introduce-width);
 
     div.card {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-left: 4rem;
+      margin-left: var(--introduce-card-margin-left);
       padding: 1.5rem 1.25rem 4rem;
       background-color: var(--white-color);
       border-radius: 20px;
@@ -36,8 +38,8 @@ div {
   }
 
   &.skills {
-    margin-right: 4rem;
-    width: 50%;
+    margin-right: var(--skills-margin-right);
+    width: var(--skills-width);
     display: flex;
     flex-direction: column;
     gap: 2rem;
