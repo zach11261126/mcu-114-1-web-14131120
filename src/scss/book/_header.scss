@@ -14,13 +14,13 @@ header {
 
   h3 {
     margin: 0px;
-    @include common.fontStyle(1.25rem, 700, 1.75rem);
+    @include common.fontStyle(var(--header-heading-font-size), 700, 1.75rem);
     color: var(--primary-color);
   }
 
   nav {
     display: var(--nav-display);
-    gap: 1.5rem;
+    gap: var(--nav-gap);
 
     .active {
       position: relative;
